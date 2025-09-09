@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .placeholder-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .placeholder-icon {
+      font-size: 6rem;
+      margin-bottom: 20px;
+      color: #00c6ff;
+      animation: bounce 1.2s infinite;
+    }
+
+    .placeholder-title {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      color: #00c6ff;
+      text-shadow: 0 0 10px rgba(0,198,255,0.6);
+    }
+
+    .placeholder-text {
+      font-size: 1.1rem;
+      color: #cce7ff;
+      margin-bottom: 20px;
+    }
+
+    .home-btn {
+      padding: 12px 28px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-animation"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span>💰</span>
+        <span>Finance Buddy</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="new_index.html">Home</a></li>
+        <li><a href="new_profile.html">Profile</a></li>
+        <li><a href="new_calculator.html">Calculator</a></li>
+
+
+        <li><a href="https://genai1-nh3r59bnyh6rlypbh4qskb.streamlit.app/" target="_blank">AI Assistant</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="placeholder-container">
+    <div class="placeholder-icon">🚧</div>
+    <div class="placeholder-title">Page Under Construction</div>
+    <div class="placeholder-text">We're working hard to bring this page to life! Please check back soon.</div>
+    <a href="new_index.html" class="home-btn">Back to Home</a>
+  </div>
+
+<footer class="site-footer" role="contentinfo">
+    <div>Made with <span class="heart">❤️</span> by AlgoNauts — Prototype</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

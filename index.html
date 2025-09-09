@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Finance Buddy — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Subtle background layers (styled in style.css) -->
+  <div class="bg-animation" aria-hidden="true"></div>
+
+  <!-- Top micro-nav (logo left, small links right) -->
+  <header class="nav-wrap" role="banner">
+    <div class="nav-inner">
+      <div class="brand" aria-label="Finance Buddy home">
+        <span class="brand-emoji">💰</span>
+        <span class="brand-name">Finance Buddy</span>
+      </div>
+
+      <nav class="micro-nav" aria-label="Quick links">
+        <a class="micro-link" href="#home">Home</a>
+        <a class="micro-link" href="new_profile.html">Profile</a>
+        <a class="micro-link" href="new_calculator.html">Calculator</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main long scrollable content -->
+  <main id="home" role="main" aria-labelledby="hero-heading">
+    <!-- Hero / masthead -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+        <div style="flex:1;min-width:300px;max-width:720px;padding-right:12px">
+          <h1 id="hero-heading" class="hero-title">Take control of your money — smarter, simpler</h1>
+          <p class="hero-sub">Finance Buddy bundles quick tools and guidance — calculators, goal trackers, micro-quizzes and an AI assistant — so you can plan and act with confidence.</p>
+
+          <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap">
+            <a class="card-cta" href="new_quiz.html" style="text-decoration:none">Try a quick quiz</a>
+            <a class="card-cta" href="new_goal.html" style="text-decoration:none">Create a goal</a>
+          </div>
+
+          <p style="margin-top:20px;color:rgba(255,255,255,0.85);font-size:0.95rem;max-width:60ch">
+            This demo is optimized for hackathons — neat, fast, and easy to share. Each module opens in a new page so you can expand it later without affecting the core UI.
+          </p>
+        </div>
+
+        <!-- Dashboard preview (mini KPI cards) — uses .card styling for consistent look -->
+        <aside style="width:320px;min-width:260px">
+          <div class="card" style="padding:16px;min-height:unset">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="font-size:1.6rem">👤</div>
+              <div>
+                <div style="font-weight:700">Welcome, Shri</div>
+                <div style="color:rgba(255,255,255,0.8);font-size:0.9rem">Prototype account</div>
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px">
+              <div style="text-align:center">
+                <div style="font-weight:700;background:linear-gradient(90deg,#667eea,#764ba2);-webkit-background-clip:text;color:transparent">₹2.5L</div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.8)">Savings</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-weight:700;background:linear-gradient(90deg,#667eea,#764ba2);-webkit-background-clip:text;color:transparent">5</div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.8)">Goals</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-weight:700;background:linear-gradient(90deg,#667eea,#764ba2);-webkit-background-clip:text;color:transparent">75%</div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.8)">Health</div>
+              </div>
+            </div>
+
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="card-cta" href="new_profile.html" style="text-decoration:none;font-size:0.9rem;padding:8px 10px">Open Profile</a>
+              <a class="card-cta" href="new_calculator.html" style="text-decoration:none;font-size:0.9rem;padding:8px 10px">Open Calculator</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Features grid (2 columns x 3 rows) - each card uses data-href so script.js opens link -->
+    <section class="features" aria-labelledby="features-heading" style="margin-top:26px">
+      <h2 id="features-heading" class="sr-only">Main features</h2>
+
+      <div class="grid" role="list">
+        <article class="card" role="button" tabindex="0" data-href="new_profile.html" aria-label="Open profile" >
+          <div class="card-icon">👤</div>
+          <div class="card-title">Profile</div>
+          <div class="card-desc">Your financial snapshot and progress tracker.</div>
+          <div class="card-cta">Open</div>
+        </article>
+
+        <article class="card" role="button" tabindex="0" data-href="new_calculator.html" aria-label="Open calculator">
+          <div class="card-icon">🧮</div>
+          <div class="card-title">Smart Calculator</div>
+          <div class="card-desc">EMI, SIP, FD — compute quickly and compare options.</div>
+          <div class="card-cta">Open</div>
+        </article>
+
+        <article class="card" role="button" tabindex="0" data-href="new_goal.html" aria-label="Open goals">
+          <div class="card-icon">🎯</div>
+          <div class="card-title">Goals</div>
+          <div class="card-desc">Create, track and visualise your savings goals.</div>
+          <div class="card-cta">Open</div>
+        </article>
+
+        <article class="card" role="button" tabindex="0" data-href="new_quiz.html" aria-label="Open quiz">
+          <div class="card-icon">📝</div>
+          <div class="card-title">Quiz</div>
+          <div class="card-desc">Short, gamified quizzes to boost financial literacy.</div>
+          <div class="card-cta">Open</div>
+        </article>
+
+        <article class="card" role="button" tabindex="0" data-href="new_library.html" aria-label="Open library">
+          <div class="card-icon">📚</div>
+          <div class="card-title">Library</div>
+          <div class="card-desc">Helpful guides, templates, and curated reads.</div>
+          <div class="card-cta">Open</div>
+        </article>
+
+        <article class="card" role="button" tabindex="0" data-href="https://genai1-nh3r59bnyh6rlypbh4qskb.streamlit.app/" aria-label="Open AI Assistant">
+          <div class="card-icon">🤖</div>
+          <div class="card-title">AI Assistant</div>
+          <div class="card-desc">Ask the assistant — opens in a new tab for live chat.</div>
+          <div class="card-cta">Open</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works — three step horizontal list (keeps same CSS look) -->
+    <section class="long-info" aria-labelledby="how-heading" style="margin-top:36px">
+      <h2 id="how-heading" style="margin-bottom:12px">How it works</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+        <div class="card" style="min-height:120px;padding:16px">
+          <div style="font-weight:700;margin-bottom:6px">1. Set a Goal</div>
+          <div style="color:rgba(255,255,255,0.85)">Quickly setup what you're saving for, target amount and timeframe.</div>
+        </div>
+        <div class="card" style="min-height:120px;padding:16px">
+          <div style="font-weight:700;margin-bottom:6px">2. Use Calculators</div>
+          <div style="color:rgba(255,255,255,0.85)">Estimate EMIs, SIP returns or FD maturity in seconds.</div>
+        </div>
+        <div class="card" style="min-height:120px;padding:16px">
+          <div style="font-weight:700;margin-bottom:6px">3. Ask AI</div>
+          <div style="color:rgba(255,255,255,0.85)">Get personalized suggestions from the AI assistant when needed.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest activity (simple list) -->
+    <section style="margin-top:28px">
+      <h3 style="margin-bottom:8px">Recent activity</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="card" style="display:flex;justify-content:space-between;align-items:center;padding:12px">
+          <div>
+            <div style="font-weight:700">Added new goal: Vacation</div>
+            <div style="color:rgba(255,255,255,0.85);font-size:0.9rem">Target ₹50,000 — 6 months</div>
+          </div>
+          <div style="color:rgba(255,255,255,0.9)">2 days ago</div>
+        </div>
+
+        <div class="card" style="display:flex;justify-content:space-between;align-items:center;padding:12px">
+          <div>
+            <div style="font-weight:700">Checked EMI for Car Loan</div>
+            <div style="color:rgba(255,255,255,0.85);font-size:0.9rem">Loan ₹4,00,000 — 5 years</div>
+          </div>
+          <div style="color:rgba(255,255,255,0.9)">4 days ago</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div>Made with <span class="heart">❤️</span> by AlgoNauts — Prototype</div>
+  </footer>
+
+  <!-- Keep your script exactly as-is. It expects .card + data-href -->
+  <script src="script.js" defer></script>
+</body>
+</html>
